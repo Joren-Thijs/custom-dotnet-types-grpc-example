@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
     <RootNamespace>MyCompany.Internal.Types</RootNamespace>
     <AssemblyName>MyCompany.Internal.Types</AssemblyName>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageOutputPath>../packages</PackageOutputPath>
   </PropertyGroup>
 
 </Project>

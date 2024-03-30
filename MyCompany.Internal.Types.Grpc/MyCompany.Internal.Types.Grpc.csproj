@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
     <RootNamespace>MyCompany.Internal.Types.Grpc</RootNamespace>
     <AssemblyName>MyCompany.Internal.Types.Grpc</AssemblyName>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageOutputPath>../packages</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

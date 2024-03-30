@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "MyCompany.Api";
+
+import "mycompany/internal/types.proto";
+
+package mycompany.api;
+
+service OrderService {
+  rpc GetOrderAmount (GetOrderAmountRequest) returns (AmountReply);
+}
+
+message GetOrderAmountRequest {
+  string debt_id = 1;
+}
+
+message AmountReply {
+  mycompany.internal.types.Money amount = 1;
+}

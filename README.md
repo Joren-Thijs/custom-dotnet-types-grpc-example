@@ -27,13 +27,13 @@ Now you can import the `mycompany/internal/types.proto` file to use MyCompany.In
 ```protobuf
 syntax = "proto3";
 
-option csharp_namespace = "MyProject.Api";
+option csharp_namespace = "MyCompany.Api";
 
 import "mycompany/internal/types.proto";
 
-package myproject.api;
+package mycompany.api;
 
-service MyService {
+service OrderService {
   rpc GetOrderAmount (GetOrderAmountRequest) returns (AmountReply);
 }
 
