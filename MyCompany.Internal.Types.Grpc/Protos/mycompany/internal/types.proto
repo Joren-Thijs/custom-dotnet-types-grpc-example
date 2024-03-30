@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "MyCompany.Internal.Types.Grpc";
+
+package mycompany.internal.types;
+
+// Substitute for C# decimal type from https://learn.microsoft.com/en-us/aspnet/core/grpc/protobuf?view=aspnetcore-8.0#decimals
+message DecimalValue {
+
+  // Whole units part of the amount
+  int64 units = 1;
+
+  // Nano units of the amount (10^-9)
+  // Must be same sign as units
+  sfixed32 nanos = 2;
+}
+
+message Money {
+  DecimalValue value = 1;
+  // The three-letter currency code defined in ISO 4217.
+  string currency = 2;
+}

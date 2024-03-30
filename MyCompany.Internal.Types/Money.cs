@@ -2,6 +2,12 @@
 
 public class Money
 {
+    public Money(decimal value, Currency currency)
+    {
+        Value = value;
+        Currency = currency;
+    }
+
     public decimal Value { get; set; }
 
     public Currency Currency { get; set; }
