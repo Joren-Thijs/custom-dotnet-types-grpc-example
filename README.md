@@ -1,4 +1,4 @@
-# custom-dotnet-types-grpc-example
+# Custom dotnet types gRPC example
 
 Example of how to share protobuf definitions of custom C# types via nuget.
 
