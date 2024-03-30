@@ -1,6 +1,20 @@
 # custom-dotnet-types-grpc-example
 
-Example of how to share protobuf definitions of custom C# types via nuget
+Example of how to share protobuf definitions of custom C# types via nuget.
+
+## Strucure
+
+This solution contains 3 projects:
+
+- MyCompany.Internal.Types: Library with custom types
+- MyCompany.Internal.Types.Grpc: gRPC defenitions and implementations of the custom types
+- MyCompany.Api: Example project to show how to import and use the custom gRPC types
+
+## build
+
+To build the solution simply run `dotnet build`.
+
+Both libraries will publish a nuget package to the local packages folder that is configured as one of the nuget sources.
 
 # Example README with instructions on how to use this library
 
